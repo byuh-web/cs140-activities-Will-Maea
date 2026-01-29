@@ -1,0 +1,19 @@
+.john { 
+    background-color: aqua;
+}
+.cena {
+    background-color: yellow;
+}
+header h1 {
+    color: hotpink;
+}
+main h3 {
+    color: hotpink;
+    border-color: aqua;
+}
+#id-selector{
+    color:#8898F2 ;
+}
+nav {
+    padding: 20px;;
+}
