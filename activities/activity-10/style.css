@@ -1,0 +1,16 @@
+nav{
+    background-color:greenyellow;
+    border: 5px solid;
+    padding: 25px;
+    width: 50%;
+    
+    
+}
+h1{
+    background-color: aqua;
+    border-style: dashed;
+    border-color: crimson;
+    margin: 50px;;
+    padding: 6%;
+    
+}
