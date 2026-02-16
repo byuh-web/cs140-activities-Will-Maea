@@ -1,39 +1,94 @@
-nav{
-    background-color:greenyellow;
-    border: 5px solid;
+#wrapper{
+    width: 880px;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-image: url(images/pexels-pixabay-434337.jpg);
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+    height: 160px;
     padding: 25px;
-    width: 50%;
-    
-    
+    border-radius: 4px 4px 12px gray;
+    text-align: center;
+
 }
-h1{
-    background-color: aqua;
-    border-style: dashed;
-    border-color: crimson;
-    margin: 50px;;
-    padding: 6%;
-    
+header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px white;
+    color: gray;
 }
-img{ 
-    width: 100%;
-    height:auto;
+nav{
+    margin: 20px 0;
+    padding: 12px;
+    border: 2px solid #084887;
     border-radius: 10px;
+    text-align: center;
+    width: 100%;
 }
+nav ul{
+    list-style: none;
+    padding: 0;
+
+}
+nav li{
+    display: inline;
+    margin: 0 20px;
+
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+}
+nav a:hover{
+    color: #084887;
+    text-transform: uppercase;
+}
+main{
+    line-height: 1.7;
+    font-size: 18px;
+    text-align: left;
+}
+main p{
+    margin-bottom: 18px;
+}
+#pic{
+    float: left;
+    width: 500px;
+    margin: 0 20px 15px 0;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px gray;
+}
+#pic img{
+width: 100%;
+height: auto;
+}
+
 figcaption{
     font-style: oblique;
-    font-size: smaller;
-    text-align: end;
-    text-shadow: 5px 5px 5px;
-    line-height: 10px;
+    font-size: 14px;
+    text-align: center;
 }
-#pic{ 
-    border: 2px solid blueviolet;
-    box-shadow: 0 4px 4px red;
-    border-radius: 10px;
-    float: left;
 
-
+#clear{
+    clear: both;
 }
-h3{
-    clear:both
+footer{
+    margin-top: 25px;
+    padding: 18px;
+    height: 60px;
+    border-top: 2px solid #084887;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    box-shadow: 2px 2px 8px lightgray;
 }
