@@ -1,0 +1,228 @@
+html, body {
+    height: 100%;
+    margin: 0;    
+}
+
+header {
+    background-color: rgb(199, 245, 100);
+    margin: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+header h1 {
+    font-size: 2.1em;
+    margin: 0;
+    width: 500px;
+    display: block;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    width: 80%;
+    align-self: center;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgb(33, 98, 116);
+    display: block;
+    padding: 5px 5px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+}
+
+nav a:hover {
+    background-color: rgba(128, 128, 128, 0.808);
+    color: white;
+}
+
+.current {
+    color: rgb(255, 255, 255);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategrey;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 50px;
+    background-color: rgba(255, 255, 254, 0.75);
+    padding: 10px;
+}
+
+.figure-left, .figure-right {
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+}
+.dessert-figure {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: black solid thin;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.747);
+    margin: 5px 10px;
+}
+figure .text {
+    margin: 0;
+    text-align: center;
+}
+
+
+.main-info {
+    width: 0;
+    flex-grow: 1;
+}
+
+.comfort-table {
+    background-color: aliceblue;
+    border: solid thin black;
+    border-collapse: collapse;
+    caption-side: top;
+    width: 700px;
+}
+
+.comfort-table thead th{
+    border: solid thin black;
+    padding: 20px;
+}
+
+.comfort-table td{
+    border: solid thin black;
+    padding: 15px;
+
+}
+.update-info {
+    flex-basis: 70%;
+}
+
+.table-source {
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+.reference {
+    color:blue
+}
+h3 {
+    margin: 0;
+}
+
+.dessert-p {
+    width: 0;
+    flex-grow: 1;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin: 20px 20px; 
+}
+
+.divider-no-line {
+    width: 100%;
+}
+
+.no-wrap {
+    /* flex-wrap: nowrap; */
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+footer {
+    color: azure;
+    padding-left: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+    }
+
+    header h1 {
+        width:fit-content;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        flex-flow: column nowrap;
+        margin: 0;
+    }
+
+    .figure-left, .figure-right, .monster-figure{
+        align-self: center;
+        width: 100%;    
+    }
+
+    .main-info, .monster-p {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%; 
+    }
+
+    .divider {
+        width: 93%;
+    }
+
+    footer {
+        padding-left: 5px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .weapon-table {
+        width: 100%;
+    }
+
+    .weapon-table thead th, .weapon-table td {
+        padding: 10px;
+    }
+
+    fieldset {
+        width: 80%;
+        margin: 0;
+    }
+
+    .form-row, .radio-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .form-row label {
+        text-align: left;
+        width: 100%;
+    }
+
+    .form-spacer {
+        width: fit-content;
+        text-align: left;
+    }
+
+    .form-row input[type="submit"] {
+        padding: 10px;
+        font-size: large;
+    }
+}
